@@ -5,29 +5,53 @@ using UnityEngine;
 
 public class Card
 {
+    //card basics
+
     public int id;
     public string cardName;
     public int cost;
+    public string cardDescription;
+
+    public Sprite thisCardsImage;
+
+    //Units stats
+
     public int attack;
     public int damage;
     public int armourClass;
     public int health;
-    public string cardDescription;
+
+    //public bool ranged
+    //public int rangedDamage
+
+    //Spell stats
+
+    public bool spell;
+    public int spellDamage;
+
 
     public Card()
     {
 
     }
-    public Card(int Id,string CardName,int Cost, int Attack, int Damage, int ArmourClass,int Health, string CardDescription)
+    public Card(int Id,string CardName,int Cost, Sprite ThisCardsImage,
+        int Attack, int Damage, int ArmourClass,int Health, bool Spell, int SpellDamage,
+        string CardDescription)
     {
         id = Id;
         cardName = CardName;
         cost = Cost;
+        thisCardsImage = ThisCardsImage;
+
         attack = Attack;
+        damage = Damage;
         armourClass = ArmourClass;
         health = Health;
+
+        spell = Spell;
+        spellDamage = SpellDamage;
+
         cardDescription = CardDescription;
-        damage = Damage;
 
     }
 
