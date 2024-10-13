@@ -67,16 +67,4 @@ public class DisplayCard : MonoBehaviour
 
 
     }
-    void Awake()
-    {
-        //Public Card has these properties Card(int Id,string CardName,int Cost, Sprite ThisCardsImage,int Attack, int Damage, int ArmourClass,int Health, bool Ranged, int RangedDamage,bool Spell, int SpellDamage,string CardDescription)
-        //Use this code to add new cards in: 
-
-        //Human Units array of 0-9
-
-        //Melee
-        //displayCard.Add(new Card(0, "Swordman", 1, Resources.Load<Sprite>("SwordmanCard"), 2, 3, 13, 20, false, 0, false, 0, ""));//Assets/CardImages/HumanCard/SwordmanCard.png
-        //displayCard.Add(new Card(1, "Knight", 2, Resources.Load<Sprite>("KnightCard"), 4, 5, 15, 25, false, 0, false, 0, ""));//Assets/CardImages/HumanCard/KnightCard.png
-        //displayCard.Add(new Card(2, "Mounted Knight", 3, Resources.Load<Sprite>("HeadKnightmanCrad"), 5, 5, 17, 30, false, 0, false, 0, ""));//Assets/CardImages/HumanCard/HeadKnightmanCrad.png
-    }
 }
