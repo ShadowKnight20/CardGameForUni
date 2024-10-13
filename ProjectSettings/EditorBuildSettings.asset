@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Card Scene/CardScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/GameMenu.unity
+    guid: 6fb5483d414f45941a6acbffc1804047
+  - enabled: 1
+    path: Assets/Scenes/SelectTeam.unity
+    guid: 12b39566653baa74f8f8fd0af748c9a5
+  - enabled: 1
+    path: Assets/Scenes/HumanScene.unity
+    guid: 81786314ca8c36d4da2220ef7873c770
+  - enabled: 1
+    path: Assets/Scenes/DevilScene.unity
+    guid: 6b5ff939232c2154d8b8f21470f29d78
+  - enabled: 1
+    path: Assets/Scenes/HumanDeckScene.unity
+    guid: 8af79273b94492f43bb78cf16adc94cd
+  - enabled: 1
+    path: Assets/Scenes/DevilDeckScene.unity
+    guid: e08a3222a99801547b55f2dddc4da187
   m_configObjects: {}

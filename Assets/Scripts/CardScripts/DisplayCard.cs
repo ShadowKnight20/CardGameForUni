@@ -45,6 +45,7 @@ public class DisplayCard : MonoBehaviour
         damage = DisplayCards[0].damage;
         cardDescription = DisplayCards[0].cardDescription;
 
+
         healthText.text = "" + health;
         armourClassText.text = "" + armourClass;
         attackText.text = ""+ attack;

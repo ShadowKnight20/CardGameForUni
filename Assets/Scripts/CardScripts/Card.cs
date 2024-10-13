@@ -21,28 +21,21 @@ public class Card
     public int armourClass;
     public int health;
 
-    //ranged
+    //public bool ranged
+    //public int rangedDamage
 
-    public bool ranged;
-    public int rangedDamage;
-
-    //Spell/Equipment stats
+    //Spell stats
 
     public bool spell;
     public int spellDamage;
 
-    //Effects
 
-    //Remove card from the opponents hand
-    
     public Card()
     {
 
     }
     public Card(int Id,string CardName,int Cost, Sprite ThisCardsImage,
-        int Attack, int Damage, int ArmourClass,int Health, 
-        bool Ranged, int RangedDamage, 
-        bool Spell, int SpellDamage,
+        int Attack, int Damage, int ArmourClass,int Health, bool Spell, int SpellDamage,
         string CardDescription)
     {
         id = Id;
@@ -55,13 +48,11 @@ public class Card
         armourClass = ArmourClass;
         health = Health;
 
-        ranged = Ranged;
-        rangedDamage = RangedDamage;
-
         spell = Spell;
         spellDamage = SpellDamage;
 
         cardDescription = CardDescription;
+
     }
 
 
