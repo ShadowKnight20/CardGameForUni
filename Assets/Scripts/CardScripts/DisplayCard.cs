@@ -30,10 +30,17 @@ public class DisplayCard : MonoBehaviour
     public Text cardDescriptionText;
     public Image cardArtImage;
 
+    public bool cardBack;
+    public static bool staticCardBack;
+
+    public GameObject Hand;
+    public int numberOfCardsInDeck;
 
     // Start is called before the first frame update
     void Start()
     {
+        numberOfCardsInDeck = PlayerDeck.deckSize;
+
         displayCard[0] = CardDatabase.cardList[displayId];
 
         id = displayCard[0].id;
@@ -64,7 +71,21 @@ public class DisplayCard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Hand = GameObject.Find("Hand");
+        if (this.transform.parent == Hand.transform.parent)
+        {
+            cardBack = false;
+        }
 
+        staticCardBack = cardBack;
 
+        if(this.tag == "Clone")
+        {
+            displayCard[0] = PlayerDeck.staticDeck[numberOfCardsInDeck - 1];
+            numberOfCardsInDeck -= 1;
+            PlayerDeck.deckSize -= 1;
+            cardBack = false;
+            this.tag = "Untagged";
+        }
     }
 }
