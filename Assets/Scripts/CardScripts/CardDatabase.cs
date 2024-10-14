@@ -9,7 +9,7 @@ public class CardDatabase : MonoBehaviour
 
     void Awake()
     {
-        Debug.Log(cardList.Count);
+        //Debug.Log(cardList.Count);
         //Public Card has these properties Card(int Id,string CardName,int Cost, Sprite ThisCardsImage,int Attack, int Damage, int ArmourClass,int Health, bool Ranged, int RangedDamage,bool Spell, int SpellDamage,string CardDescription)
         //Use this code to add new cards in: 
 

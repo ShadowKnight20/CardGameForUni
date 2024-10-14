@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDeck : MonoBehaviour //Human Cards Only
+public class PlayerDeck : MonoBehaviour //Human Cards Only at the moment
 {
     public List<Card> deck = new List<Card>();
     public List<Card> container = new List<Card>();
