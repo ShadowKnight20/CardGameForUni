@@ -45,8 +45,11 @@ public class DisplayCard : MonoBehaviour
 
         id = displayCard[0].id;
 
-        Debug.Log(displayCard.Count);
+    }
 
+    // Update is called once per frame
+    void Update()
+    {
         cardName = displayCard[0].cardName;
         cost = displayCard[0].cost;
         health = displayCard[0].health;
@@ -62,16 +65,8 @@ public class DisplayCard : MonoBehaviour
         damageText.text = "" + damage;
         cardDescriptionText.text = "" + cardDescription;
         cardArtImage.sprite = thisCardImage;
-
-        Debug.Log(displayCard.Count);
-
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         Hand = GameObject.Find("Hand");
+
         if (this.transform.parent == Hand.transform.parent)
         {
             cardBack = false;

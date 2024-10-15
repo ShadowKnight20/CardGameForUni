@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDeck : MonoBehaviour //Human Cards Only at the moment
+public class PlayerDeck : MonoBehaviour //Human Cards Only at the moment Nevermind it takes the the entire list of the database (might need to create a seperate database for devils/humans)
 {
     
     public List<Card> container = new List<Card>();
@@ -64,11 +64,17 @@ public class PlayerDeck : MonoBehaviour //Human Cards Only at the moment
         {
             cardInDeck5.SetActive(false);
         }
+        if (TurnSystem.startTurn == true)
+        {
+            StartCoroutine(Draw(1));
+            TurnSystem.startTurn = false;
+        }
+
     }
 
     IEnumerator StartGame()
     {
-        for (int i = 0;i <= 11; i++)
+        for (int i = 0;i <= 4; i++) //cards at the start of game (player starts with 5)
         {
             yield return new WaitForSeconds(1);
 
@@ -86,6 +92,14 @@ public class PlayerDeck : MonoBehaviour //Human Cards Only at the moment
             int randomIndex = Random.Range(i, deckSize);
             deck[i] = deck[randomIndex];
             deck[randomIndex] = container[0];
+        }
+    }
+    IEnumerator Draw(int x) 
+    { 
+        for(int i = 0; i < x; i++)
+        {
+            yield return new WaitForSeconds(1);
+            Instantiate(CardToHand, transform.position, transform.rotation);
         }
     }
 }
