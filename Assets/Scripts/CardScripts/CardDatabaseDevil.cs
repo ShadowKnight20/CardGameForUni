@@ -5,32 +5,32 @@ using UnityEngine;
 
 public class CardDatabaseDevil : MonoBehaviour
 {
-    public static List<Card> cardList = new List<Card>();
+    public static List<OpponentCard> cardList = new List<OpponentCard>();
 
     void Awake()
     {
  
         ////Deamon Units array
 
-        cardList.Add(new Card(0, "Balthazer", 1, Resources.Load<Sprite>("BalthazerCard"), 3, 2, 13, 20, false, 0, false, 0, ""));
-        cardList.Add(new Card(1, "Abaddon", 2, Resources.Load<Sprite>("AbaddonCard"), 4, 3, 15, 25, false, 0, false, 0, ""));
-        cardList.Add(new Card(2, "Grunt", 3, Resources.Load<Sprite>("GruntCard"), 5, 5, 17, 30, false, 0, false, 0, ""));
+        cardList.Add(new OpponentCard(1, "Balthazer", 1, Resources.Load<Sprite>("BalthazerCard"), 3, 2, 13, 20, false, 0, false, 0, ""));
+        cardList.Add(new OpponentCard(2, "Abaddon", 2, Resources.Load<Sprite>("AbaddonCard"), 4, 3, 15, 25, false, 0, false, 0, ""));
+        cardList.Add(new OpponentCard(3, "Grunt", 3, Resources.Load<Sprite>("GruntCard"), 5, 5, 17, 30, false, 0, false, 0, ""));
 
         ////Ranged
 
-        cardList.Add(new Card(3, "Lamia", 1, Resources.Load<Sprite>("LamiaCard"), 2, 0, 13, 20, true, 2, false, 0, ""));
-        cardList.Add(new Card(4, "Behemoth", 2, Resources.Load<Sprite>("BehemothCard"), 4, 0, 14, 20, true, 3, false, 0, ""));
-        cardList.Add(new Card(5, "Reaper", 3, Resources.Load<Sprite>("ReaperCard"), 5, 0, 16, 20, true, 6, false, 0, ""));
+        cardList.Add(new OpponentCard(4, "Lamia", 1, Resources.Load<Sprite>("LamiaCard"), 2, 0, 13, 20, true, 2, false, 0, ""));
+        cardList.Add(new OpponentCard(5, "Behemoth", 2, Resources.Load<Sprite>("BehemothCard"), 4, 0, 14, 20, true, 3, false, 0, ""));
+        cardList.Add(new OpponentCard(6, "Reaper", 3, Resources.Load<Sprite>("ReaperCard"), 5, 0, 16, 20, true, 6, false, 0, ""));
 
         ////Deamon Spells
 
-        cardList.Add(new Card(6, "Rite", 1, Resources.Load<Sprite>("DevilSpell1Card"), 0, 0, 0, 0, false, 0, true, -2, "Get 2 points"));
-        cardList.Add(new Card(7, "Reform Oneself", 1, Resources.Load<Sprite>("DevilSpell2Card"), 0, 0, 0, 0, false, 0, true,0, ""));
+        cardList.Add(new OpponentCard(7, "Rite", 1, Resources.Load<Sprite>("DevilSpell1Card"), 0, 0, 0, 0, false, 0, true, -2, "Get 2 points"));
+        cardList.Add(new OpponentCard(8, "Reform Oneself", 1, Resources.Load<Sprite>("DevilSpell2Card"), 0, 0, 0, 0, false, 0, true,0, ""));
 
         ////Deamon Equipment
 
-        cardList.Add(new Card(8, "Trident Of Doom", 1, Resources.Load<Sprite>("DevilEquipment1Card"), 5, 0, 0, 0, false, 0, true, 0, ""));
-        cardList.Add(new Card(9, "Devil's marks", 1, Resources.Load<Sprite>("DevilEquipment2Card"), 0, 0, 5, 0, true, 0, false, 0, ""));
+        cardList.Add(new OpponentCard(9, "Trident Of Doom", 1, Resources.Load<Sprite>("DevilEquipment1Card"), 5, 0, 0, 0, false, 0, true, 0, ""));
+        cardList.Add(new OpponentCard(10, "Devil's marks", 1, Resources.Load<Sprite>("DevilEquipment2Card"), 0, 0, 5, 0, true, 0, false, 0, ""));
 
 
        //Debug.Log(cardList.Count);

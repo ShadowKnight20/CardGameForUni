@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 8806984981122559593}
   - component: {fileID: 1570965029929486760}
   - component: {fileID: 3212324579481418290}
-  - component: {fileID: 832448235724465362}
-  - component: {fileID: 512179956889171278}
+  - component: {fileID: -5031221396675584356}
+  - component: {fileID: 4879663721459937197}
   - component: {fileID: 7458877431779380951}
+  - component: {fileID: -4667572512455021497}
   - component: {fileID: -7499990767657412566}
   m_Layer: 5
-  m_Name: Card
+  m_Name: CardOpponent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,7 +88,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &832448235724465362
+--- !u!114 &-5031221396675584356
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,7 +97,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 165291667721323180}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79925775388e43544af76ee6af69534e, type: 3}
+  m_Script: {fileID: 11500000, guid: 38c8b9434c5058343b1e7250e33355ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   displayCard:
@@ -115,13 +116,13 @@ MonoBehaviour:
     spellDamage: 0
   displayId: 1
   id: 0
-  cardName: None
+  cardName: 
   cost: 0
   health: 0
   armourClass: 0
   attack: 0
   damage: 0
-  cardDescription: None
+  cardDescription: 
   thisCardImage: {fileID: 0}
   healthText: {fileID: 3651116958402998756}
   armourClassText: {fileID: 2668112809608867048}
@@ -129,10 +130,10 @@ MonoBehaviour:
   damageText: {fileID: 9009569276887626224}
   cardDescriptionText: {fileID: 7771507639806032192}
   cardArtImage: {fileID: 3212324579481418290}
-  cardBack: 1
-  Hand: {fileID: 0}
+  cardBack: 0
+  OpponentHand: {fileID: 0}
   numberOfCardsInDeck: 0
---- !u!114 &512179956889171278
+--- !u!114 &4879663721459937197
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,7 +142,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 165291667721323180}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd6d1feec8d2ae248b73fe4b471bc1ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 188b8253383e9c446b4552f8bc5ab5f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &7458877431779380951
@@ -156,7 +157,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6988624a4cc6bc34d90f255aef8afa3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardBack: {fileID: 1111353442625617860}
+  cardBack: {fileID: 165291667721323180}
+--- !u!114 &-4667572512455021497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165291667721323180}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c9fc15aa319ba42b4db352fdb192d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-7499990767657412566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -833,11 +846,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9a9eb9c15a15614b8cc81169ee19648, type: 3}
---- !u!1 &1111353442625617860 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1584326763087775306, guid: f9a9eb9c15a15614b8cc81169ee19648, type: 3}
-  m_PrefabInstance: {fileID: 1914305670310967694}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &3664582548793456188 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2903639461735387058, guid: f9a9eb9c15a15614b8cc81169ee19648, type: 3}

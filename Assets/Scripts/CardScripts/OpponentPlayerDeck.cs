@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDeck : MonoBehaviour //Human Cards Only at the moment Nevermind it takes the the entire list of the database (might need to create a seperate database for devils/humans)
+public class OpponentPlayerDeck : MonoBehaviour //Devil Cards
 {
     
-    public List<Card> container = new List<Card>();
-    public int x;
+    public List<OpponentCard> container = new List<OpponentCard>();
+    public int y;
     public static int deckSize;
-    public List<Card> deck = new List<Card>();
-    public static List<Card> staticDeck = new List<Card>();
+    public List<OpponentCard> deck = new List<OpponentCard>();
+    public static List<OpponentCard> staticDeck = new List<OpponentCard>();
 
 
     public GameObject cardInDeck1;
@@ -18,20 +18,21 @@ public class PlayerDeck : MonoBehaviour //Human Cards Only at the moment Nevermi
     public GameObject cardInDeck4;
     public GameObject cardInDeck5;
 
-    public GameObject CardToHand;
+    public GameObject CardToHandOpponent;
     public GameObject[] Clones;
     public GameObject Hand;
 
     // Start is called before the first frame update
     void Start()
     {
-        x = 0;
+        y = 0;
         deckSize = 29; //temporary number
 
         for (int i = 0; i < 29; i++) //30 cards in a deck minus 1 as you start with 1 in hand (29)
         {
-            x = Random.Range(i, 9);
-            deck[i]=CardDatabase.cardList[x];
+            y = Random.Range(1,10);
+            Debug.Log(y);
+            deck[i]=CardDatabaseDevil.cardList[y];
         }
 
         StartCoroutine(StartGame());
@@ -64,23 +65,23 @@ public class PlayerDeck : MonoBehaviour //Human Cards Only at the moment Nevermi
         {
             cardInDeck5.SetActive(false);
         }
-        //if (TurnSystem.startTurn == true)
-        //{
-        //    StartCoroutine(Draw(1));
-        //    TurnSystem.startTurn = false;
-        //}
+        if (TurnSystem.startTurn == true)
+        {
+            StartCoroutine(Draw(1));
+            //TurnSystem.startTurn = false;
+        }
 
     }
 
     IEnumerator StartGame()
     {
-        for (int i = 0;i <= 4; i++) //cards at the start of game (player starts with 5)
+        for (int i = 0;i <= 3; i++) //cards at the start of game (player starts with 4) +1 later when its start of their turn
         {
             yield return new WaitForSeconds(1);
 
             //audioSource.PlayOneShot()
 
-            Instantiate(CardToHand, transform.position, transform.rotation);
+            Instantiate(CardToHandOpponent, transform.position, transform.rotation);
         }
     }
 
@@ -99,7 +100,7 @@ public class PlayerDeck : MonoBehaviour //Human Cards Only at the moment Nevermi
         for(int i = 0; i < x; i++)
         {
             yield return new WaitForSeconds(1);
-            Instantiate(CardToHand, transform.position, transform.rotation);
+            Instantiate(CardToHandOpponent, transform.position, transform.rotation);
         }
     }
 }
