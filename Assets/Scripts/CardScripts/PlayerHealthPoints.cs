@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PlayerHealthPoints : MonoBehaviour
 {
-    public static float maxHP;
+    public float maxHP;
     public static float staticHP;
     public float hp;
     public Image Health;
