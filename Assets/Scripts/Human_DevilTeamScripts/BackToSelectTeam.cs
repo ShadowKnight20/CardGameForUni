@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BackToSelect : MonoBehaviour
+public class BackToSelectTeam : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public void BackToSelectTeam()
+    public void GoToSelect()
     {
         SceneManager.LoadScene("SelectTeam");
     }
