@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class SelectHuman : MonoBehaviour
+public class HumanSelect : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public void SelectHumanTeam()
+    public void GoToHumanDeck()
     {
         SceneManager.LoadScene("HumanDeckScene");
     }
+
 }

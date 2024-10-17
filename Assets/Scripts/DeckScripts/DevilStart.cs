@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class BackToDevilTeam : MonoBehaviour
+public class DevilStart : MonoBehaviour
 {
-    public void BlackToDevilTeam()
+    public void DevilteamStart()
     {
-
-        SceneManager.LoadScene("DevilScene");
+        SceneManager.LoadScene(" ");
     }
+
 }

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BackToDevilTeam : MonoBehaviour
+public class HumanStart : MonoBehaviour
 {
-    public void BlackToDevilTeam()
+    public void HumanteamStart()
     {
-
-        SceneManager.LoadScene("DevilScene");
+        SceneManager.LoadScene(" ");
     }
+
 }
