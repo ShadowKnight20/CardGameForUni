@@ -8,15 +8,15 @@ public class TurnSystem : MonoBehaviour
     public bool isYourTurn;
     public int yourTurn;
     public int isOpponentTurn;
-    public Text turnText;
+    //public Text turnText;
 
-    public int maxMana;
-    public int currentMana;
-    public Text manaText;
+    //public int maxMana;
+   // public int currentMana;
+    //public Text manaText;
 
-    public int opponentMaxMana;
-    public int opponentCurrentMana;
-    public Text opponentManaText;
+    //public int opponentMaxMana;
+    //public int opponentCurrentMana;
+    //public Text opponentManaText;
 
     public static bool startTurn;
 
@@ -27,8 +27,8 @@ public class TurnSystem : MonoBehaviour
         yourTurn = 1;
         isOpponentTurn = 0;
 
-        maxMana = 1; 
-        currentMana = 1;
+        //maxMana = 1; 
+        //currentMana = 1;
 
         startTurn = false;
     }
@@ -38,37 +38,37 @@ public class TurnSystem : MonoBehaviour
     {
         if (isYourTurn ==true) 
         {
-            turnText.text = "Your Turn";
+            //turnText.text = "Your Turn";
         }
         else
         {
-            turnText.text = "Opponent Turn";
+            //turnText.text = "Opponent Turn";
         }
-        manaText.text = currentMana + "/" + maxMana;
+        //manaText.text = currentMana + "/" + maxMana;
 
-        opponentManaText.text = opponentCurrentMana + "/" + opponentMaxMana;
+        //opponentManaText.text = opponentCurrentMana + "/" + opponentMaxMana;
     }
     public void EndYourTurn()
     {
-        isYourTurn = false;
+        //isYourTurn = false;
         startTurn = true;
 
-        isOpponentTurn += 1;
+        //isOpponentTurn += 1;
 
-        opponentMaxMana += 1;
-        opponentCurrentMana = opponentMaxMana;
-        startTurn = false;
+       // opponentMaxMana += 1;
+        //opponentCurrentMana = opponentMaxMana;
+        //startTurn = false;
     }
-    public void EndOpponentTurn()
-    {
-        startTurn = true;
+    //public void EndOpponentTurn()
+    //{
+    //    startTurn = true;
 
-        isYourTurn = true;
-        yourTurn += 1;
+    //    isYourTurn = true;
+    //    yourTurn += 1;
         
-        maxMana += 1;
-        currentMana = maxMana;
+    //    //maxMana += 1;
+    //    //currentMana = maxMana;
 
-        startTurn = false;
-    }
+    //    startTurn = false;
+    //}
 }
