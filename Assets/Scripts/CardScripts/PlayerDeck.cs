@@ -64,17 +64,17 @@ public class PlayerDeck : MonoBehaviour //Human Cards Only at the moment Nevermi
         {
             cardInDeck5.SetActive(false);
         }
-        //if (TurnSystem.startTurn == true)
-        //{
-        //    StartCoroutine(Draw(1));
-        //    TurnSystem.startTurn = false;
-        //}
+        if (TurnSystem.startTurn == true)
+        {
+            StartCoroutine(Draw(1));
+            TurnSystem.startTurn = false;
+        }
 
     }
 
     IEnumerator StartGame()
     {
-        for (int i = 0;i <= 4; i++) //cards at the start of game (player starts with 5)
+        for (int i = 0;i <= 2; i++) //cards at the start of game (player starts with 1)
         {
             yield return new WaitForSeconds(1);
 
