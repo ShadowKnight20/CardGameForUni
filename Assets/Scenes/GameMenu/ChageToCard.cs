@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChageToBattle : MonoBehaviour
+public class ChageToCard : MonoBehaviour
 {
-    public void GotoBattleScene()
+    public void GotoCardScene()
     {
-        SceneManager.LoadScene("GridScene");
+        SceneManager.LoadScene("CardScene");
     }
 }
