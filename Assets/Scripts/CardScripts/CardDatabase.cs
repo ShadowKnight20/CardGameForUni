@@ -29,13 +29,13 @@ public class CardDatabase : MonoBehaviour
         cardList.Add(new Card(5, "Sorcerer", 1, Resources.Load<Sprite>("MageCard"), 5, 5, 13, 20, true, 5, false, 0, ""));
         ////Human Spells
 
-        cardList.Add(new Card(6, "Sign", 1, Resources.Load<Sprite>("Spell1Card"), 0, 0, 0, 0, false, 0, true, -2, "Get 2 points"));
-        cardList.Add(new Card(7, "Dragon", 1, Resources.Load<Sprite>("Spell2Card"), 0, 0, 0, 0, false, 0, true, 0, "Destroy 1 opponent's card")); //need to add card removal from opponent 
+        //cardList.Add(new Card(6, "Sign", 1, Resources.Load<Sprite>("Spell1Card"), 0, 0, 0, 0, false, 0, true, -2, "Get 2 points"));
+        //cardList.Add(new Card(7, "Dragon", 1, Resources.Load<Sprite>("Spell2Card"), 0, 0, 0, 0, false, 0, true, 0, "Destroy 1 opponent's card")); //need to add card removal from opponent 
 
         ////Human Equipment
 
-        cardList.Add(new Card(8, "Sword and Shield", 1, Resources.Load<Sprite>("Equipment1Card"), 3, 0, 2, 0, false, 0, true, 0, "")); //need properties for equipment (need to buff/attach card on a chosen unit) //Assets/CardImages/HumanCard/Equipment1Card.png
-        cardList.Add(new Card(9, "Armour", 1, Resources.Load<Sprite>("Equipment2Card"), 0, 0, 5, 0, false, 0, true, 0, ""));
+        //cardList.Add(new Card(8, "Sword and Shield", 1, Resources.Load<Sprite>("Equipment1Card"), 3, 0, 2, 0, false, 0, true, 0, "")); //need properties for equipment (need to buff/attach card on a chosen unit) //Assets/CardImages/HumanCard/Equipment1Card.png
+        //cardList.Add(new Card(9, "Armour", 1, Resources.Load<Sprite>("Equipment2Card"), 0, 0, 5, 0, false, 0, true, 0, ""));
 
         ////Deamon Units array of 10-19
 
