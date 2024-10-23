@@ -10951,7 +10951,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2055214441}
-        m_TargetAssemblyTypeName: GotoNextLevel, Assembly-CSharp
+        m_TargetAssemblyTypeName: GotoNextLevel2, Assembly-CSharp
         m_MethodName: GotoNextLV2
         m_Mode: 1
         m_Arguments:
@@ -14420,7 +14420,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1080, y: 720}
+  m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
