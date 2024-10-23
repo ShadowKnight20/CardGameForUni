@@ -10951,7 +10951,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2055214441}
-        m_TargetAssemblyTypeName: GotoNextLevel, Assembly-CSharp
+        m_TargetAssemblyTypeName: GotoNextLevel2, Assembly-CSharp
         m_MethodName: GotoNextLV2
         m_Mode: 1
         m_Arguments:
