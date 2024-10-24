@@ -10951,7 +10951,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2055214441}
-        m_TargetAssemblyTypeName: GotoNextLevel, Assembly-CSharp
+        m_TargetAssemblyTypeName: GotoNextLevel2, Assembly-CSharp
         m_MethodName: GotoNextLV2
         m_Mode: 1
         m_Arguments:
@@ -13619,7 +13619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -334.4, y: 321.1}
+  m_AnchoredPosition: {x: -335.2, y: 321.4}
   m_SizeDelta: {x: 101.6015, y: 27.9853}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1874577402
