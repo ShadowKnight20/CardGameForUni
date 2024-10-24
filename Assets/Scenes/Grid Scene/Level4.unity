@@ -2908,9 +2908,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2055214440}
-        m_TargetAssemblyTypeName: BackTocardScene, Assembly-CSharp
-        m_MethodName: BackToCardScene
+      - m_Target: {fileID: 2055214442}
+        m_TargetAssemblyTypeName: BackLV3, Assembly-CSharp
+        m_MethodName: BackToLV3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3125,7 +3125,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 435450221542036023, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_text
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 869971278666804903, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3146,6 +3146,14 @@ PrefabInstance:
     - target: {fileID: 2729495988786993448, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_Name
       value: DemonSprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 3196056730105137139, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
+      propertyPath: m_text
+      value: DMG +3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3226104876496196117, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
+      propertyPath: m_text
+      value: ATK +4
       objectReference: {fileID: 0}
     - target: {fileID: 5979568161097610168, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_Pivot.x
@@ -3226,6 +3234,10 @@ PrefabInstance:
     - target: {fileID: 5979568161097610168, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060405300153697481, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
+      propertyPath: m_text
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7526219347184609447, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_AnchorMax.x
@@ -9277,7 +9289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 435450221542036023, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_text
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 869971278666804903, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -9298,6 +9310,10 @@ PrefabInstance:
     - target: {fileID: 2729495988786993448, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_Name
       value: DemonSprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 3196056730105137139, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
+      propertyPath: m_text
+      value: DMG +2
       objectReference: {fileID: 0}
     - target: {fileID: 3976566555807893318, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: slider
@@ -9389,7 +9405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6060405300153697481, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_text
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7526219347184609447, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_AnchorMax.x
@@ -13806,7 +13822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -334.4, y: 321.1}
+  m_AnchoredPosition: {x: -335, y: 321.7}
   m_SizeDelta: {x: 101.6015, y: 27.9853}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1874577402
@@ -14566,8 +14582,8 @@ GameObject:
   - component: {fileID: 2055214438}
   - component: {fileID: 2055214437}
   - component: {fileID: 2055214436}
-  - component: {fileID: 2055214440}
   - component: {fileID: 2055214441}
+  - component: {fileID: 2055214442}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -14668,18 +14684,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &2055214440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055214435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e190beed42e51e343a19d228549837b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2055214441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14690,6 +14694,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40d6334c6c0d4e04690b4d50e910409e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2055214442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055214435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a63600c84b3554f8b7c60d7190b4f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2093344789
@@ -15145,7 +15161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 435450221542036023, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_text
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 869971278666804903, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -15166,6 +15182,14 @@ PrefabInstance:
     - target: {fileID: 2729495988786993448, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_Name
       value: DemonSprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 3196056730105137139, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
+      propertyPath: m_text
+      value: DMG +5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3226104876496196117, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
+      propertyPath: m_text
+      value: ATK +5
       objectReference: {fileID: 0}
     - target: {fileID: 3976566555807893318, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: slider
@@ -15257,7 +15281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6060405300153697481, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_text
-      value: 25
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7526219347184609447, guid: e39c9e5dae29c9044b1bd1fe900fb3af, type: 3}
       propertyPath: m_AnchorMax.x
